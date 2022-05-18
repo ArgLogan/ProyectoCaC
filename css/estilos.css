@@ -4,6 +4,12 @@ html{
 * {
     box-sizing: border-box;
   }
+/* mis estilos*/
+.logo{
+    height: 1rem;
+}
+
+
 /* barra de navegacion*/
 .topnav {
     overflow: hidden;
