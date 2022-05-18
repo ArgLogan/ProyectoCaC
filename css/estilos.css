@@ -6,14 +6,18 @@ html{
   }
 /* mis estilos*/
 .logo{
-    height: 1rem;
+    height: 1.5rem;
+}
+body{
+
+  background-image: url(/imgs/fondo.jpg);
 }
 
 
 /* barra de navegacion*/
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #2c4593;
   }
   
   .topnav a {
@@ -32,7 +36,7 @@ html{
   }
   
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #71acd6;
     color: white;
   }
   
@@ -71,7 +75,7 @@ html{
   
   /* Left column (menu) */
   .left {
-    flex: 35%;
+    flex: 15%;
     padding: 15px 0;
   }
   
@@ -81,7 +85,7 @@ html{
   
   /* Right column (page content) */
   .right {
-    flex: 65%;
+    flex: 85%;
     padding: 15px;
   }
   
