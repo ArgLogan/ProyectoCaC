@@ -8,9 +8,38 @@ html{
 .logo{
     height: 1.5rem;
 }
-body{
+.contiene-sec{
+  background-color:#c8e1f3;
+  height:70vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.contiene-art{
+  border-style: solid;
+  border-width: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border-color: #2c4593;
+  width: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.video{
+  border-style: solid 2px;
+}
 
-  background-image: url(/imgs/fondo.jpg);
+header{
+  height:15vh;
+}
+footer{
+  height:15vh;
 }
 
 
