@@ -7,38 +7,37 @@
     <title>Bytebooks - servicios</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
-</head>
-<body id="body-serv">
+<body>
     <header>
-        <nav>
-            <div class="topnav" id="myTopnav">
-                <a href="#"><img class="logo" src="imgs/isologo.png" alt="logo"></a>
-                <a href="/index.html" >Home</a>
-                <a href="#Sevicios" class="active">Sevicios</a>
-                <a href="/libros.html">Libros</a>
-                <a href="/about.html">Nosotros</a>
-                <a href="/contacto.html">Contacto</a>
-
-            </div>
-        </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="/index.html"><img class="logo" src="imgs/isologo.png" alt="logo"></a>
+            <a href="#Sevicios" class="active">Sevicios</a>
+            <a href="/libros.html">Libros</a>
+            <a href="/about.html">Nosotros</a>
+            <a href="/contacto.html">Contacto</a>
+        </div>
     </header>
+    <div>
 
-    <section class="contiene-sec">
-        <article class="contiene-art">
-            <iframe class="video"
-                width="560" height="315" src="https://www.youtube.com/embed/7H0MvLM6_Bg" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        <section class="contiene-sec">
+            <article class="contiene-art">
+                <iframe class="video"
+                    src="https://www.youtube.com/embed/7H0MvLM6_Bg" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
-            </iframe>
-        </article>
-    </section>
+                </iframe>
+            </article>
+        </section>
+    </div>
    
     <footer>
-        <div>
-            <h3>hola</h3>
+        <div class="social-icons">
+            <a class="social-icon" [href]="header.lidin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" [href]="header.github" target="_blank" ><i class="fab fa-github"></i></a>
+            <a class="social-icon" [href]="header.twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" [href]="header.email" target="_blank" ><i class="fas fa-envelope"></i></a>
         </div>
-     
     </footer>
     
 </body>
