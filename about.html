@@ -14,18 +14,22 @@
 </head>
 </head>
 <body>
-    <nav>
-        <div class="topnav" id="myTopnav">
-            <a href="/index.html">Home</a>
+    <header>
+        <div class="topnav">
+            <a href="/index.html"><img class="logo" src="imgs/isologo.png" alt="logo"></a>
             <a href="/servicios.html">Sevicios</a>
             <a href="/libros.html">Libros</a>
             <a href="#about" class="active">Nosotros</a>
             <a href="/contacto.html">Contacto</a>
-            <a href="#"><img class="logo" src="imgs/pic1.png" alt="logo"></a>
         </div>
-    </nav>
+    </header>
 
-    <section class="contiene-caja">
+    <section class="contiene-caja grid">
+        <article class="banner">
+            <div>
+                <img src="/imgs/banner.jpg" alt="">
+            </div>
+        </article>
         <article class="caja">
             <h3>Nosotros</h3>
             <p>Somos una editorial joven que cree que el patrimonio cultural debe estar al alcance de todas las personas. Es nuestra meta acercar la lectura a la mayor cantidad de gente. Por ese motivo hemos elegido el formato digital.
@@ -40,14 +44,12 @@
         </article>
     </section>
     <footer>
-
         <div class="social-icons">
             <a class="social-icon" [href]="header.lidin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a class="social-icon" [href]="header.github" target="_blank" ><i class="fab fa-github"></i></a>
             <a class="social-icon" [href]="header.twitter" target="_blank"><i class="fab fa-twitter"></i></a>
             <a class="social-icon" [href]="header.email" target="_blank" ><i class="fas fa-envelope"></i></a>
         </div>
-
     </footer>
     
 </body>

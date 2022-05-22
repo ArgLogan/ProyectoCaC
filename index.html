@@ -9,22 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
     
 </head>
 <body>
     <header>
-        <nav>
-            <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Home</a>
-                <a href="/servicios.html">Sevicios</a>
-                <a href="/libros.html">Libros</a>
-                <a href="/about.html">Nosotros</a>
-                <a href="/contacto.html">Contacto</a>
-        
-                <a href="#"><img class="logo" src="imgs/pic1.png" alt="logo"></a>
-            </div>
-        </nav>
+        <div class="topnav">
+            <a href="#home"><img class="logo" src="imgs/isologo.png" alt="logo"></a>
+            <a href="/servicios.html">Sevicios</a>
+            <a href="/libros.html">Libros</a>
+            <a href="/about.html">Nosotros</a>
+            <a href="/contacto.html">Contacto</a>
+        </div>
     </header>
+
     <section>
         <aside>                  
                 <div>
@@ -38,7 +36,14 @@
         </aside>
         <article></article>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="social-icons">
+            <a class="social-icon" [href]="header.lidin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" [href]="header.github" target="_blank" ><i class="fab fa-github"></i></a>
+            <a class="social-icon" [href]="header.twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" [href]="header.email" target="_blank" ><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
     
 </body>
 </html>
