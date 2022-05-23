@@ -14,19 +14,20 @@
 </head>
 </head>
 <body>
-    <header>
-        <div class="topnav">
-            <a href="/index.html"><img class="logo" src="imgs/isologo.png" alt="logo"></a>
-            <a href="/servicios.html">Sevicios</a>
-            <a href="/libros.html">Libros</a>
-            <a href="#about" class="active">Nosotros</a>
-            <a href="/contacto.html">Contacto</a>
-        </div>
-    </header>
+    
 
-    <section class="contiene-caja grid">
-        <div>
-
+        <header>
+            <nav class="topnav">
+                <a href="/index.html"><img class="logo" src="imgs/isologo.png" alt="logo"></a>
+                <a href="/servicios.html">Sevicios</a>
+                <a href="/libros.html">Libros</a>
+                <a href="#about" class="active">Nosotros</a>
+                <a href="/contacto.html">Contacto</a>
+            </nav>
+        </header>
+        
+        <section class="contiene-caja grid">
+            
             <article class="banner">
                 <div>
                     <img src="/imgs/banner.jpg" alt="">
@@ -46,14 +47,14 @@
                 </article>
             </section>
         </div>
-            <footer>
-                <div class="social-icons">
-                    <a class="social-icon" [href]="header.lidin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" [href]="header.github" target="_blank" ><i class="fab fa-github"></i></a>
-                    <a class="social-icon" [href]="header.twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="social-icon" [href]="header.email" target="_blank" ><i class="fas fa-envelope"></i></a>
-                </div>
-            </footer>
-            
-        </body>
-        </html>
+        <footer>
+            <div class="social-icons">
+                <a class="social-icon" [href]="header.lidin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" [href]="header.github" target="_blank" ><i class="fab fa-github"></i></a>
+                <a class="social-icon" [href]="header.twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" [href]="header.email" target="_blank" ><i class="fas fa-envelope"></i></a>
+            </div>
+        </footer>
+        
+    </body>
+    </html>

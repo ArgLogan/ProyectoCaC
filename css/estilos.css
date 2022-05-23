@@ -4,6 +4,8 @@ html{
 }
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
  
   }
 /* mis estilos*/
@@ -13,7 +15,7 @@ article{
   display: flex;
 }
 header{
-  position: fixed;
+  /*position: fixed;*/
   display: block;
   top: 0;
   left:0;
@@ -147,7 +149,7 @@ footer{
       height:100%;
     }
     .topnav a{
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 
