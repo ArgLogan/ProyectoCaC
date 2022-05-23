@@ -1,0 +1,74 @@
+.contiene-caja{
+    margin-top: 1rem;
+    height:85%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .caja{
+    flex-direction: column;
+    font-family: 'EB Garamond', serif;
+    text-align: justify;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 2.2rem;    
+    border: solid #2c4593 .2rem;    
+    background-color: #c8e1f3; 
+    margin: 2rem;    
+    width:70%;
+    height:100%;
+  }
+  
+ .banner{
+    width:25%;
+    height:auto;
+  }
+  img {
+    width:100%;
+    height:auto;
+    border-radius: 5px;
+  }
+  @media screen and (max-width:800px) and (min-width:601px) {
+    .contiene-caja{
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .caja{
+      width:70%;
+      height:100%;
+      font-size: 2.5rem;
+    }
+
+  }
+
+  @media screen and (max-width: 800px) {
+    .caja{
+      width:80%;
+      height:100%;
+      font-size: 2rem;
+    }
+    .contiene-caja .banner{
+      width:60%;  
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .contiene-caja .banner{
+      display: none;
+    }
+    .caja{
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      width:100%;
+      height:100%;
+    }
+    .topnav a{
+      font-size: 1rem;
+    }
+  }
+    
