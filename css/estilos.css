@@ -10,9 +10,20 @@ html{
   }
 /* mis estilos*/
 /*generales*/
-
+body .fondo{
+  background-image: url(/imgs/fondo4.jpg) ;
+  content: "";
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
 article{
   display: flex;
+  justify-content: center;
 }
 header{
   display: block;
