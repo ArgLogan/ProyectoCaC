@@ -6,26 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bytebooks - Contacto</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
 </head>
-<body>
+<body class="fondo">
   <header>
-    <div class="topnav" id="myTopnav">
+    <nav class="topnav" id="myTopnav">
       <a href="/index.html" >Home</a>
       <a href="/servicios.html">Sevicios</a>
       <a href="/libros.html">Libros</a>
       <a href="/about.html">Nosotros</a>
       <a href="#Contacto" class="active">Contacto</a>
       <a href="#"><img class="logo" src="imgs/pic1.png" alt="logo"></a>
-    </div>
+    </nav>
   </header>
 
-  <section class="contiene-form">
-    <article class = "container contat-form">
-      <h3>Contacto</h3>
-    </article>
+  <section >
+   
+      <form name="contacto" class="form">
+        <h2>CONTACTANOS</h2>
+        <p type="Nombre:"><input name="nombre" placeholder="Escriba su Nombre..."></input></p>
+        <p type="Email:"><input name="email" placeholder="Indique por favor su email..."></input></p>
+        <p type="Sector:">
+            <select name=sector>
+            <option value="Elegir">Elegir
+            <option value="Comercial">Contacto comercial
+            <option value="Conversion">Conversión de libros
+            <option value="Ventas">ventas 
+            <option value="info">información
+           </select>
+        </p>
+        <p type="Mensaje:"><input name="mensaje" placeholder="Qué le gustaría decirnos..."></input></p>
+        <button onclick="validar()">Enviar mensaje</button>
+      </form>
+
+
   </section>
   <footer>
-    
-  </footer>
+    <nav class="social-icons">
+        <a class="social-icon" [href]="header.lidin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon" [href]="header.github" target="_blank" ><i class="fab fa-github"></i></a>
+        <a class="social-icon" [href]="header.twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="social-icon" [href]="header.email" target="_blank" ><i class="fas fa-envelope"></i></a>
+    </nav>
+</footer>
 </body>
+  <script src="/valida.js">  </script>
 </html>
