@@ -1,74 +1,89 @@
-body {
-    padding-left: 20px;
-    padding-right: 20px;
+footer{
+    position:relative;
+}
+.video{
+    width:50rem;
+    height: 28.5rem;
+    border: solid #2c4593 .5rem;    
+}
+.libro {
+    margin: 2rem;
+    box-shadow: 0 .4rem .8rem 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20rem;
+    border-radius: 5px;
+    width: 25rem;
+    height:50rem;
+  }
+ section h2{
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+ } 
+  .libro:hover {
+    box-shadow: 0 1rem 1.6rem 0 rgba(0,0,0,0.2);
+  }
+  
+  .libro img {
+    width:25rem;
+    height:25rem;
+    border-radius: 5px 5px 0 0;
+  }
+  .libro .container p {
+      font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+.servicios .libro div img{
+    width: 5rem;
+    height:5rem;
+}
 
-  }
-img {
-    width: 100%; /* need to overwrite inline dimensions */
-    height: auto;
-  }
-  h2 {
-    margin-bottom: .5em;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
-  }
-  
-  
-  /* hover styles */
-  .location-listing {
-    position: relative;
-  }
-  
-  .location-image {
-    line-height: 0;
-    overflow: hidden;
-  }
-  
-  .location-image img {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in;
-    transform: scale(1.1);
-  }
-  
-  .location-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 1;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity .5s;
-    background: rgba(90,0,10,0.4);
-    color: white;
-    
-    /* position the text in t’ middle*/
+.servicios{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.con-video{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-content: center;
+    align-items: center;
+}
+.con-video h3{
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+.formatos{
+    margin-top: 0.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  
-  .location-listing:hover .location-title {
-    opacity: 1;
-  }
-  
-  .location-listing:hover .location-image img {
-    filter: blur(2px);
-  }
-  
-  
-  /* for touch screen devices */
-  @media (hover: none) { 
-    .location-title {
-      opacity: 1;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+
+@media screen and (max-width: 600px){
+    .video{
+        width:40rem;
+        height: 22.8rem;
     }
-    .location-image img {
-      filter: blur(2px);
+
+}
+
+@media screen and (max-width: 400px){
+    .video{
+    display:none;
     }
-  }
+
+}

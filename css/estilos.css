@@ -9,7 +9,7 @@ html{
  
   }
 /* mis estilos*/
-/*generales*/
+
 .fondo{
   background-image: url(/imgs/fondo4.jpg) ;
   top: 0;
@@ -138,7 +138,7 @@ video{
 
 @media screen and (max-width: 479px) {
   .topnav a{
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   
 }
